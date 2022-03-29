@@ -25,7 +25,6 @@ module.exports = function (app) {
 
       myDb.addIssue(project, issue_title, issue_text, created_by, assigned_to, status_text, (err, data) => {
         if (err) {
-          console.log(err)
           return res.json({ error: 'required field(s) missing' })
         }
         res.json({
@@ -79,7 +78,6 @@ module.exports = function (app) {
 
       myDb.deleteIssue(project, _id, (err, data) => {
         if (err) {
-          console.log(err)
           return res.json({ error: 'could not delete', _id })
         }
         res.json({ result: "successfully deleted", _id })
