@@ -182,7 +182,6 @@ suite('Functional Tests', function () {
             _id: _id + "1"
         })
             .end((err, res) => {
-                console.log(res.body)
                 assert.equal(res.status, 200, "Response status should be 200");
                 assert.equal(res.type, "application/json", "Response type should be 'application/json'");
                 assert.equal(res.body.error, 'could not delete', "Response body.error should be 'could not delete'");

@@ -52,6 +52,7 @@ const updateIssue = (project, _id, updateBody, done) => {
 
 const deleteIssue = (project, _id, done) => {
     let Issue = mongoose.model('Issue', issueSchema, project);
+
     Issue.findByIdAndDelete(_id, (err, data) => {
         done(err, data);
     });

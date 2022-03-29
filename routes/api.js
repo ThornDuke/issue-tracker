@@ -56,7 +56,7 @@ module.exports = function (app) {
       }
 
       myDb.updateIssue(project, _id, updateBody, (err, data) => {
-        if (err) {
+        if (!data || err) {
           return res.json({ error: 'could not update', _id })
         }
         /* res.json({
@@ -77,7 +77,7 @@ module.exports = function (app) {
       }
 
       myDb.deleteIssue(project, _id, (err, data) => {
-        if (err) {
+        if (!data || err) {
           return res.json({ error: 'could not delete', _id })
         }
         res.json({ result: "successfully deleted", _id })
