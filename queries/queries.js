@@ -2,16 +2,38 @@
 
 function createId() {
   let result = "";
-  const pool = "abcdefghijklmnopqrstuvwxyz0123456789";
+  const pool = "0123456789abcdefghijklmnopqrstuvwxyz"
+    .split("")
+    .map((char) => ({ sort: Math.random(), value: char }))
+    .sort((prev, succ) => prev.sort - succ.sort)
+    .map((item) => item.value)
+    .join("");
   for (let i = 1; i <= 48; i++) {
     const index = Math.floor(Math.random() * pool.length);
     const char = pool[index];
     result += char;
   }
-  return result;
+  return result
+    .split("")
+    .map((char) => ({ sort: Math.random(), value: char }))
+    .sort((prev, succ) => prev.sort - succ.sort)
+    .map((item) => item.value)
+    .join("");
 }
 
-function db(apiUrl) {
+for (let i = 0; i <= 20; i++) {
+  console.log(createId());
+}
+
+function hasRequiredFields(obj) {
+  return obj.issue_title && obj.issue_text && obj.created_by;
+}
+
+function currDate() {
+  return new Date(Date.now()).toISOString();
+}
+
+function dbHandler(apiUrl) {
   this.apiUrl = apiUrl;
 
   this.getAllRecords = function (project, done) {
@@ -25,6 +47,62 @@ function db(apiUrl) {
       .then((data) => done(null, data))
       .catch((err) => done(err));
   };
+
+  this.createRecord = function (project, record, done) {
+    if (hasRequiredFields(record)) {
+      const id = createId();
+      const date = currDate();
+      record.id = id;
+      record.created_on = date;
+      record.updated_on = date;
+      record.open = true;
+
+      fetch(this.apiUrl + "/" + project, {
+        method: "POST",
+        headers: {
+          "Content-type": "application/json",
+        },
+        body: JSON.stringify(record),
+      })
+        .then((response) => response.json())
+        .then((data) => done(null, data))
+        .catch((err) => done(err));
+    } else {
+      done("required field(s) missing");
+    }
+  };
+
+  this.updateRecord = function (project, id, record, done) {
+    const date = currDate();
+    fetch(this.apiUrl + "/" + project + "/" + id)
+      .then((response) => response.json())
+      .then((data) => {
+        const updatedRecord = {
+          ...data,
+          ...record,
+          updated_on: date,
+        };
+        fetch(this.apiUrl + "/" + project + "/" + id, {
+          method: "PUT",
+          headers: {
+            "Content-type": "application/json",
+          },
+          body: JSON.stringify(updatedRecord),
+        })
+          .then((response) => response.json())
+          .then((data) => done(null, data))
+          .catch((err) => done(err));
+      })
+      .catch((err) => done(err));
+  };
 }
 
-module.exports = db;
+// , {
+//   method: "PUT",
+//   headers: {
+//     "Content-type": "application/json",
+//   },
+//   body: JSON.stringify(record),
+// }
+
+module.exports = dbHandler;
