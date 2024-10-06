@@ -12,9 +12,9 @@ module.exports = function (app) {
 
     .get(function (req, res) {
       let project = req.params.project;
-      db.getAllRecords((err, data) => {
+      db.getAllRecords(project, (err, data) => {
         if (err) {
-          res.send("error fetching data: " + err);
+          res.send("error fetching data => " + err);
         }
         res.send(data);
       });
