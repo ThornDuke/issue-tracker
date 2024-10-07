@@ -21,10 +21,6 @@ function createId() {
     .join("");
 }
 
-for (let i = 0; i <= 20; i++) {
-  console.log(createId());
-}
-
 function hasRequiredFields(obj) {
   return obj.issue_title && obj.issue_text && obj.created_by;
 }
@@ -95,14 +91,15 @@ function dbHandler(apiUrl) {
       })
       .catch((err) => done(err));
   };
-}
 
-// , {
-//   method: "PUT",
-//   headers: {
-//     "Content-type": "application/json",
-//   },
-//   body: JSON.stringify(record),
-// }
+  this.deleteRecord = function (project, id, done) {
+    fetch(this.apiUrl + "/" + project + "/" + id, { method: "DELETE" })
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => done(null, data))
+      .catch((err) => done(err));
+  };
+}
 
 module.exports = dbHandler;

@@ -11,17 +11,17 @@ module.exports = function (app) {
     .route("/api/issues/:project")
 
     .get(function (req, res) {
-      let project = req.params.project;
+      const project = req.params.project;
       db.getAllRecords(project, (err, data) => {
         if (err) {
-          res.send("error fetching data => " + err);
+          res.json({ error: err });
         }
         res.send(data);
       });
     })
 
     .post(function (req, res) {
-      let project = req.params.project;
+      const project = req.params.project;
       const body = req.body;
       db.createRecord(project, body, (err, data) => {
         if (err) {
@@ -32,28 +32,30 @@ module.exports = function (app) {
     })
 
     .put(function (req, res) {
-      let project = req.params.project;
-      let body = req.body;
-      console.log("§§§=>", body);
-
+      const project = req.params.project;
+      const body = req.body;
       let newRecord = {};
       for (let key of Object.keys(body)) {
         if (body[key] != "") {
           newRecord[key] = body[key];
         }
       }
-      newRecord.id = body._id;
-      delete newRecord._id;
       db.updateRecord(project, body._id, newRecord, (err, data) => {
         if (err) {
           res.json({ error: err });
-        } else {
-          res.send(data);
         }
+        res.send(data);
       });
     })
 
     .delete(function (req, res) {
-      let project = req.params.project;
+      const project = req.params.project;
+      const id = body.id;
+      db.deleteRecord(project, id, (err, data) => {
+        if (err) {
+          res.json({ error: err });
+        }
+        res.send(data);
+      });
     });
 };
