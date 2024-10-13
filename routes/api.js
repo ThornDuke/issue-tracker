@@ -12,9 +12,11 @@ module.exports = function (app) {
 
     .get(function (req, res) {
       const project = req.params.project;
-      db.getAllRecords(project, (err, data) => {
+      const query = req.query;
+
+      db.getAllRecords(project, query, (err, data) => {
         if (err) {
-          res.json({ error: err });
+          res.status(404).json({ error: err });
         }
         res.send(data);
       });
@@ -25,7 +27,7 @@ module.exports = function (app) {
       const body = req.body;
       db.createRecord(project, body, (err, data) => {
         if (err) {
-          res.json({ error: err });
+          res.status(400).json({ error: err });
         }
         res.send(data);
       });
@@ -40,9 +42,9 @@ module.exports = function (app) {
           newRecord[key] = body[key];
         }
       }
-      db.updateRecord(project, body._id, newRecord, (err, data) => {
+      db.updateRecord(project, body.id, newRecord, (err, data) => {
         if (err) {
-          res.json({ error: err });
+          res.status(400).json({ error: err });
         }
         res.send(data);
       });

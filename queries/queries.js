@@ -1,6 +1,14 @@
 "use strict";
 
 function createId() {
+  const hyphenated = function (str) {
+    let result = str;
+    result = result.substring(0, 16) + "-" + result.substring(16);
+    result = result.substring(0, 25) + "-" + result.substring(25);
+    result = result.substring(0, 34) + "-" + result.substring(34);
+    return result;
+  };
+
   let result = "";
   const pool = "0123456789abcdefghijklmnopqrstuvwxyz"
     .split("")
@@ -13,12 +21,13 @@ function createId() {
     const char = pool[index];
     result += char;
   }
-  return result
+  result = result
     .split("")
     .map((char) => ({ sort: Math.random(), value: char }))
     .sort((prev, succ) => prev.sort - succ.sort)
     .map((item) => item.value)
     .join("");
+  return hyphenated(result);
 }
 
 function hasRequiredFields(obj) {
@@ -32,8 +41,20 @@ function currDate() {
 function dbHandler(apiUrl) {
   this.apiUrl = apiUrl;
 
-  this.getAllRecords = function (project, done) {
-    fetch(this.apiUrl + "/" + project)
+  this.getAllRecords = function (project, query, done) {
+    const queryContent = function (q) {
+      if (JSON.stringify(q) == "{}") {
+        return "";
+      }
+      return (
+        "?" +
+        Object.keys(q)
+          .map((key) => `${key}=${q[key]}`)
+          .join("&")
+      );
+    };
+    const actualUrl = `${this.apiUrl}/${project}${queryContent(query)}`;
+    fetch(actualUrl)
       .then((response) => {
         if (response.status == 404) {
           throw new Error("No data for the project '" + project + "'");
@@ -70,6 +91,10 @@ function dbHandler(apiUrl) {
 
   this.updateRecord = function (project, id, record, done) {
     const date = currDate();
+    if (id == undefined) {
+      done("no id");
+      return;
+    }
     fetch(this.apiUrl + "/" + project + "/" + id)
       .then((response) => response.json())
       .then((data) => {
