@@ -28,7 +28,7 @@ const missingRequiredFieldsObj = {
 suite("Functional Tests", function () {
   this.timeout(5000);
   suite("Create issue", function () {
-    test("Create issue with every field: test POST /api/issues/{project}", function (done) {
+    test("Create issue with every field: POST", function (done) {
       chai
         .request(server)
         .keepOpen()
@@ -42,7 +42,7 @@ suite("Functional Tests", function () {
           done();
         });
     });
-    test("Create issue with only required fields: test POST /api/issues/{project}", function (done) {
+    test("Create issue with only required fields: POST", function (done) {
       chai
         .request(server)
         .keepOpen()
@@ -56,7 +56,7 @@ suite("Functional Tests", function () {
           done();
         });
     });
-    test("Create issue with missing required fields: test POST /api/issues/{project}", function (done) {
+    test("Create issue with missing required fields: POST", function (done) {
       chai
         .request(server)
         .keepOpen()
@@ -70,7 +70,7 @@ suite("Functional Tests", function () {
     });
   });
   suite("View issue", function () {
-    test("View issues on a project: `GET` request to `/api/issues/{project}`", function (done) {
+    test("View issues on a project: GET", function (done) {
       chai
         .request(server)
         .keepOpen()
@@ -82,7 +82,7 @@ suite("Functional Tests", function () {
           done();
         });
     });
-    test("View issues on a project with one filter: `GET` request to `/api/issues/{project}`", function (done) {
+    test("View issues on a project with one filter: GET", function (done) {
       chai
         .request(server)
         .keepOpen()
@@ -94,7 +94,7 @@ suite("Functional Tests", function () {
           done();
         });
     });
-    test("View issues on a project with multiple filters: `GET` request to `/api/issues/{project}`", function (done) {
+    test("View issues on a project with multiple filters: GET", function (done) {
       chai
         .request(server)
         .keepOpen()
@@ -108,7 +108,7 @@ suite("Functional Tests", function () {
     });
   });
   suite("Update issue", function () {
-    test("Update one field on an issue: `PUT` request to `/api/issues/{project}`", function (done) {
+    test("Update one field on an issue: PUT", function (done) {
       chai
         .request(server)
         .keepOpen()
@@ -124,7 +124,7 @@ suite("Functional Tests", function () {
           done();
         });
     });
-    test("Update multiple fields on an issue: `PUT` request to `/api/issues/{project}`", function (done) {
+    test("Update multiple fields on an issue: PUT", function (done) {
       chai
         .request(server)
         .keepOpen()
@@ -142,7 +142,7 @@ suite("Functional Tests", function () {
           done();
         });
     });
-    test("Update an issue with missing `_id`: `PUT` request to `/api/issues/{project}`", function (done) {
+    test("Update an issue with missing `id`: PUT", function (done) {
       chai
         .request(server)
         .keepOpen()
@@ -154,6 +154,80 @@ suite("Functional Tests", function () {
         .end(function (err, res) {
           assert.equal(res.status, 400);
           assert.equal(res.text, '{"error":"no id"}');
+          done();
+        });
+    });
+    test("Update an issue with no fields to update: PUT", function (done) {
+      chai
+        .request(server)
+        .keepOpen()
+        .put("/api/issues/apitest")
+        .send({})
+        .end(function (err, res) {
+          assert.equal(res.status, 400);
+          assert.equal(res.text, '{"error":"no fields"}');
+          done();
+        });
+    });
+    test("Update an issue with an invalid `id`: PUT", function (done) {
+      chai
+        .request(server)
+        .keepOpen()
+        .put("/api/issues/apitest")
+        .send({
+          id: "zpj81x9d4ukie9a1",
+          issue_title: "Reassigned issue",
+          assigned_to: "Giuanin Lafanà",
+        })
+        .end(function (err, res) {
+          assert.equal(res.status, 400);
+          assert.equal(res.text, '{"error":{}}');
+          assert.isTrue(res.badRequest);
+          done();
+        });
+    });
+  });
+  suite("Delete issue", function () {
+    test("Delete an issue: DELETE", function (done) {
+      chai
+        .request(server)
+        .post("/api/issues/apitest")
+        .send({
+          issue_title: "Functional Test",
+          issue_text: "Test delete of a just created record",
+          created_by: "Duke",
+        })
+        .end(function (err, res) {
+          const currId = res.body.id;
+          chai
+            .request(server)
+            .delete("/api/issues/apitest")
+            .send({ id: currId })
+            .end(function (err, res) {
+              assert.equal(res.status, 200);
+              done();
+            });
+        });
+    });
+    test("Delete an issue with an invalid id: DELETE", function (done) {
+      chai
+        .request(server)
+        .delete("/api/issues/apitest")
+        .send({
+          id: "cippalippa",
+        })
+        .end(function (err, res) {
+          assert.property(res.body, "error");
+          done();
+        });
+    });
+    test("Delete an issue with missing id: DELETE", function (done) {
+      chai
+        .request(server)
+        .delete("/api/issues/apitest")
+        .end(function (err, res) {
+          assert.equal(res.status, 400);
+          assert.equal(res.text, '{"error":"missing id"}');
           done();
         });
     });

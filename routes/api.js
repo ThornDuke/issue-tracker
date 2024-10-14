@@ -52,7 +52,12 @@ module.exports = function (app) {
 
     .delete(function (req, res) {
       const project = req.params.project;
-      const id = body.id;
+      const id = req.body.id;
+      if (!id) {
+        res.status(400).json({ error: "missing id" });
+        return;
+      }
+
       db.deleteRecord(project, id, (err, data) => {
         if (err) {
           res.json({ error: err });

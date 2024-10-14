@@ -1,14 +1,6 @@
 "use strict";
 
 function createId() {
-  const hyphenated = function (str) {
-    let result = str;
-    result = result.substring(0, 16) + "-" + result.substring(16);
-    result = result.substring(0, 25) + "-" + result.substring(25);
-    result = result.substring(0, 34) + "-" + result.substring(34);
-    return result;
-  };
-
   let result = "";
   const pool = "0123456789abcdefghijklmnopqrstuvwxyz"
     .split("")
@@ -27,7 +19,7 @@ function createId() {
     .sort((prev, succ) => prev.sort - succ.sort)
     .map((item) => item.value)
     .join("");
-  return hyphenated(result);
+  return result;
 }
 
 function hasRequiredFields(obj) {
@@ -91,8 +83,12 @@ function dbHandler(apiUrl) {
 
   this.updateRecord = function (project, id, record, done) {
     const date = currDate();
-    if (id == undefined) {
+    if (Object.keys(record).length != 0 && id == undefined) {
       done("no id");
+      return;
+    }
+    if (Object.keys(record).length == 0) {
+      done("no fields");
       return;
     }
     fetch(this.apiUrl + "/" + project + "/" + id)
@@ -118,10 +114,13 @@ function dbHandler(apiUrl) {
   };
 
   this.deleteRecord = function (project, id, done) {
-    fetch(this.apiUrl + "/" + project + "/" + id, { method: "DELETE" })
-      .then((response) => {
-        return response.json();
-      })
+    fetch(`${this.apiUrl}/${project}/${id}`, {
+      method: "DELETE",
+      headers: {
+        "Content-type": "application/json",
+      },
+    })
+      .then((response) => response.json())
       .then((data) => done(null, data))
       .catch((err) => done(err));
   };
