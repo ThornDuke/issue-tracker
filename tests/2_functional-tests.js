@@ -114,7 +114,7 @@ suite("Functional Tests", function () {
         .keepOpen()
         .put("/api/issues/apitest")
         .send({
-          id: "ptqdk7jcr324s739-g66od97a-ir0ytimo-xfl072llotm08vks",
+          id: "i82c6u17wnemwzm59fr7g81cevxa06qsoqectng1y8lu5425",
           issue_title: "Reassigned issue",
         })
         .end(function (err, res) {
@@ -130,14 +130,14 @@ suite("Functional Tests", function () {
         .keepOpen()
         .put("/api/issues/apitest")
         .send({
-          id: "zpj81x9d4ukie9a1-0ivljhic-4n969i3s-eq7ji2uy8mierwbx",
-          issue_title: "Reassigned issue",
+          id: "i82c6u17wnemwzm59fr7g81cevxa06qsoqectng1y8lu5425",
+          issue_title: "Reassigned issue to multiple",
           assigned_to: "Giuanin Lafanà",
         })
         .end(function (err, res) {
           assert.equal(res.status, 200);
           assert.exists(res.body);
-          assert.equal(res.body["issue_title"], "Reassigned issue");
+          assert.equal(res.body["issue_title"], "Reassigned issue to multiple");
           assert.equal(res.body["assigned_to"], "Giuanin Lafanà");
           done();
         });
