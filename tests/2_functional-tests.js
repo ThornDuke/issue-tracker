@@ -36,7 +36,7 @@ suite("Functional Tests", function () {
         .send(everyFieldObj)
         .end(function (err, res) {
           assert.equal(res.status, 200);
-          assert.property(res.body, "id");
+          assert.property(res.body, "_id");
           assert.property(res.body, "created_on");
           assert.property(res.body, "updated_on");
           done();
@@ -50,7 +50,7 @@ suite("Functional Tests", function () {
         .send(requiredFieldsObj)
         .end(function (err, res) {
           assert.equal(res.status, 200);
-          assert.property(res.body, "id");
+          assert.property(res.body, "_id");
           assert.property(res.body, "created_on");
           assert.property(res.body, "updated_on");
           done();
@@ -114,13 +114,14 @@ suite("Functional Tests", function () {
         .keepOpen()
         .put("/api/issues/apitest")
         .send({
-          id: "i82c6u17wnemwzm59fr7g81cevxa06qsoqectng1y8lu5425",
+          _id: "i82c6u17wnemwzm59fr7g81cevxa06qsoqectng1y8lu5425",
           issue_title: "Reassigned issue",
         })
         .end(function (err, res) {
           assert.equal(res.status, 200);
           assert.exists(res.body);
-          assert.equal(res.body["issue_title"], "Reassigned issue");
+          assert.equal(res.body["result"], "successfully updated");
+          assert.equal(res.body["_id"], "i82c6u17wnemwzm59fr7g81cevxa06qsoqectng1y8lu5425");
           done();
         });
     });
@@ -130,19 +131,19 @@ suite("Functional Tests", function () {
         .keepOpen()
         .put("/api/issues/apitest")
         .send({
-          id: "i82c6u17wnemwzm59fr7g81cevxa06qsoqectng1y8lu5425",
+          _id: "i82c6u17wnemwzm59fr7g81cevxa06qsoqectng1y8lu5425",
           issue_title: "Reassigned issue to multiple",
           assigned_to: "Giuanin Lafanà",
         })
         .end(function (err, res) {
           assert.equal(res.status, 200);
           assert.exists(res.body);
-          assert.equal(res.body["issue_title"], "Reassigned issue to multiple");
-          assert.equal(res.body["assigned_to"], "Giuanin Lafanà");
+          assert.equal(res.body["result"], "successfully updated");
+          assert.equal(res.body["_id"], "i82c6u17wnemwzm59fr7g81cevxa06qsoqectng1y8lu5425");
           done();
         });
     });
-    test("Update an issue with missing `id`: PUT", function (done) {
+    test("Update an issue with missing `_id`: PUT", function (done) {
       chai
         .request(server)
         .keepOpen()
@@ -153,7 +154,7 @@ suite("Functional Tests", function () {
         })
         .end(function (err, res) {
           assert.equal(res.status, 400);
-          assert.equal(res.text, '{"error":"no id"}');
+          assert.equal(res.text, '{"error":"missing _id"}');
           done();
         });
     });
@@ -162,26 +163,26 @@ suite("Functional Tests", function () {
         .request(server)
         .keepOpen()
         .put("/api/issues/apitest")
-        .send({})
+        .send({ _id: "i82c6u17wnemwzm59fr7g81cevxa06qsoqectng1y8lu5425" })
         .end(function (err, res) {
           assert.equal(res.status, 400);
-          assert.equal(res.text, '{"error":"no fields"}');
+          assert.equal(res.body.error, "no update field(s) sent");
+          assert.equal(res.body._id, "i82c6u17wnemwzm59fr7g81cevxa06qsoqectng1y8lu5425");
           done();
         });
     });
-    test("Update an issue with an invalid `id`: PUT", function (done) {
+    test("Update an issue with an invalid `_id`: PUT", function (done) {
       chai
         .request(server)
         .keepOpen()
         .put("/api/issues/apitest")
         .send({
-          id: "zpj81x9d4ukie9a1",
+          _id: "zpj81x9d4ukie9a1",
           issue_title: "Reassigned issue",
           assigned_to: "Giuanin Lafanà",
         })
         .end(function (err, res) {
           assert.equal(res.status, 400);
-          assert.equal(res.text, '{"error":{}}');
           assert.isTrue(res.badRequest);
           done();
         });
@@ -198,36 +199,36 @@ suite("Functional Tests", function () {
           created_by: "Duke",
         })
         .end(function (err, res) {
-          const currId = res.body.id;
+          const currId = res.body._id;
           chai
             .request(server)
             .delete("/api/issues/apitest")
-            .send({ id: currId })
+            .send({ _id: currId })
             .end(function (err, res) {
               assert.equal(res.status, 200);
               done();
             });
         });
     });
-    test("Delete an issue with an invalid id: DELETE", function (done) {
+    test("Delete an issue with an invalid `_id`: DELETE", function (done) {
       chai
         .request(server)
         .delete("/api/issues/apitest")
         .send({
-          id: "cippalippa",
+          _id: "cippalippa",
         })
         .end(function (err, res) {
-          assert.property(res.body, "error");
+          assert.equal(res.status, 400);
           done();
         });
     });
-    test("Delete an issue with missing id: DELETE", function (done) {
+    test("Delete an issue with missing `_id`: DELETE", function (done) {
       chai
         .request(server)
         .delete("/api/issues/apitest")
         .end(function (err, res) {
           assert.equal(res.status, 400);
-          assert.equal(res.text, '{"error":"missing id"}');
+          assert.equal(res.text, '{"error":"missing _id"}');
           done();
         });
     });

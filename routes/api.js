@@ -27,7 +27,7 @@ module.exports = function (app) {
       const body = req.body;
       db.createRecord(project, body, (err, data) => {
         if (err) {
-          res.status(400).json({ error: err });
+          res.status(400).send({ error: err });
         }
         res.send(data);
       });
@@ -36,31 +36,35 @@ module.exports = function (app) {
     .put(function (req, res) {
       const project = req.params.project;
       const body = req.body;
+      const _id = body._id;
       let newRecord = {};
       for (let key of Object.keys(body)) {
         if (body[key] != "") {
           newRecord[key] = body[key];
         }
       }
-      db.updateRecord(project, body.id, newRecord, (err, data) => {
+      db.updateRecord(project, _id, newRecord, (err, data) => {
         if (err) {
-          res.status(400).json({ error: err });
+          const errResult = err._id
+            ? { error: err.err, _id: err._id || "NO-ID" }
+            : { error: err.err };
+          res.status(400).send(errResult);
         }
-        res.send(data);
+        res.send({ result: "successfully updated", _id: _id });
       });
     })
 
     .delete(function (req, res) {
       const project = req.params.project;
-      const id = req.body.id;
-      if (!id) {
-        res.status(400).json({ error: "missing id" });
+      const _id = req.body._id;
+      if (!_id) {
+        res.status(400).json({ error: "missing _id" });
         return;
       }
 
-      db.deleteRecord(project, id, (err, data) => {
+      db.deleteRecord(project, _id, (err, data) => {
         if (err) {
-          res.json({ error: err });
+          res.status(400).json({ error: err });
         }
         res.send(data);
       });

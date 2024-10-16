@@ -48,8 +48,8 @@ function dbHandler(apiUrl) {
     const actualUrl = `${this.apiUrl}/${project}${queryContent(query)}`;
     fetch(actualUrl)
       .then((response) => {
-        if (response.status == 404) {
-          throw new Error("No data for the project '" + project + "'");
+        if (response.status >= 400) {
+          throw new Error(response.statusText);
         }
         return response.json();
       })
@@ -59,13 +59,12 @@ function dbHandler(apiUrl) {
 
   this.createRecord = function (project, record, done) {
     if (hasRequiredFields(record)) {
-      const id = createId();
+      const _id = createId();
       const date = currDate();
-      record.id = id;
+      record._id = _id;
       record.created_on = date;
       record.updated_on = date;
       record.open = true;
-
       fetch(this.apiUrl + "/" + project, {
         method: "POST",
         headers: {
@@ -73,7 +72,12 @@ function dbHandler(apiUrl) {
         },
         body: JSON.stringify(record),
       })
-        .then((response) => response.json())
+        .then((response) => {
+          if (response.status >= 400) {
+            throw new Error(response.statusText);
+          }
+          return response.json();
+        })
         .then((data) => done(null, data))
         .catch((err) => done(err));
     } else {
@@ -81,25 +85,34 @@ function dbHandler(apiUrl) {
     }
   };
 
-  this.updateRecord = function (project, id, record, done) {
+  this.updateRecord = function (project, _id, record, done) {
     const date = currDate();
-    if (Object.keys(record).length != 0 && id == undefined) {
-      done("no id");
+    if (Object.keys(record).length != 0 && _id == undefined) {
+      done({ err: "missing _id" });
       return;
     }
-    if (Object.keys(record).length == 0) {
-      done("no fields");
+    if (Object.keys(record).length == 1 && _id != undefined) {
+      done({ err: "no update field(s) sent", _id: _id });
       return;
     }
-    fetch(this.apiUrl + "/" + project + "/" + id)
-      .then((response) => response.json())
+    fetch(this.apiUrl + "/" + project + "/" + _id)
+      .then((response) => {
+        if (response.status >= 400) {
+          throw new Error(response.statusText);
+        }
+        return response.json();
+      })
       .then((data) => {
+        if (Object.keys(data).length == 0) {
+          done("Invalid _id");
+          return;
+        }
         const updatedRecord = {
           ...data,
           ...record,
           updated_on: date,
         };
-        fetch(this.apiUrl + "/" + project + "/" + id, {
+        fetch(this.apiUrl + "/" + project + "/" + _id, {
           method: "PUT",
           headers: {
             "Content-type": "application/json",
@@ -108,19 +121,24 @@ function dbHandler(apiUrl) {
         })
           .then((response) => response.json())
           .then((data) => done(null, data))
-          .catch((err) => done(err));
+          .catch((err) => done({ error: "could not update", _id: _id }));
       })
       .catch((err) => done(err));
   };
 
-  this.deleteRecord = function (project, id, done) {
-    fetch(`${this.apiUrl}/${project}/${id}`, {
+  this.deleteRecord = function (project, _id, done) {
+    fetch(`${this.apiUrl}/${project}/${_id}`, {
       method: "DELETE",
       headers: {
         "Content-type": "application/json",
       },
     })
-      .then((response) => response.json())
+      .then((response) => {
+        if (response.status >= 400) {
+          throw new Error(response.statusText);
+        }
+        return response.json();
+      })
       .then((data) => done(null, data))
       .catch((err) => done(err));
   };

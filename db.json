@@ -4,7 +4,7 @@
       "assigned_to": "Sam",
       "status_text": "Working",
       "open": true,
-      "_id": "69kwrjsvsfv0c2si-5f8j6o6q-cpb5xzip-b05lt3zeggwoaxyg",
+      "_id": "69kwrjsvsfv0c2si5f8j6o6qcpb5xzipb05lt3zeggwoaxyg",
       "issue_title": "Issue Title N. 1",
       "issue_text": "Start the project to complete the way",
       "created_by": "Sam",
@@ -15,7 +15,7 @@
       "assigned_to": "Sam",
       "status_text": "Thinking",
       "open": false,
-      "_id": "1hyrjl19rj978nmh-n3i98t33-u24vqmcr-7hpz7v6efkrm14lk",
+      "_id": "1hyrjl19rj978nmhn3i98t33u24vqmcr7hpz7v6efkrm14lk",
       "issue_title": "Issue Title N. 2",
       "issue_text": "Start the project to complete the way",
       "created_by": "Sam",
@@ -26,7 +26,7 @@
       "assigned_to": "Sam",
       "status_text": "Working",
       "open": true,
-      "_id": "70xifv5lkice64ly-ydf85zzx-8nj9zzh0-rd77n9m6k311lf1g",
+      "_id": "70xifv5lkice64lyydf85zzx8nj9zzh0rd77n9m6k311lf1g",
       "issue_title": "Tip of the Day",
       "issue_text": "Start the project to complete the way",
       "created_by": "Sam",
@@ -37,7 +37,7 @@
       "assigned_to": "Sam",
       "status_text": "Leaving",
       "open": false,
-      "_id": "e7d84e2r6ai12o4m-b2esnjl9-zmd8qsat-ngzvlaou54hepliu",
+      "_id": "e7d84e2r6ai12o4mb2esnjl9zmd8qsatngzvlaou54hepliu",
       "issue_title": "Carretta is the new car",
       "issue_text": "Start the project to complete the way",
       "created_by": "Sam",
@@ -48,7 +48,7 @@
       "assigned_to": "Sam",
       "status_text": "thinking",
       "open": true,
-      "_id": "z65kv1tt5r1o73a3-5qjktewp-dizefoom-6x6lk2cz2ogpyikz",
+      "_id": "z65kv1tt5r1o73a35qjktewpdizefoom6x6lk2cz2ogpyikz",
       "issue_title": "Take a pink and return a ponk",
       "issue_text": "Start the project to complete the way",
       "created_by": "Sam",
@@ -59,7 +59,7 @@
       "assigned_to": "Sam",
       "status_text": "Working",
       "open": true,
-      "_id": "sif65v4cktsb1oli-wkjifpj1-v6r5pd3b-6ivnhuz4tx63mrr6",
+      "_id": "sif65v4cktsb1oliwkjifpj1v6r5pd3b6ivnhuz4tx63mrr6",
       "issue_title": "Galbanin",
       "issue_text": "Start the project to complete the way",
       "created_by": "Sam",
@@ -70,7 +70,7 @@
       "assigned_to": "Sam",
       "status_text": "Starting",
       "open": false,
-      "_id": "l69gbng5da8cpomu-9sxmntxk-qwnorhgu-l2tujr5hkt18fh11",
+      "_id": "l69gbng5da8cpomu9sxmntxkqwnorhgul2tujr5hkt18fh11",
       "issue_title": "Don't refuse",
       "issue_text": "Start the project to complete the way",
       "created_by": "Sam",
@@ -78,7 +78,7 @@
       "updated_on": "2024-08-17T12:55:05.709Z"
     },
     {
-      "_id": "5a1d75dxe8w0gpan-zcfg81z0-ru4nlbly-jakkd3802jxx42qe",
+      "_id": "5a1d75dxe8w0gpanzcfg81z0ru4nlblyjakkd3802jxx42qe",
       "issue_title": "Issue aimed to test the test",
       "issue_text": "POST this issue to see the test behavior",
       "created_by": "Duke",
@@ -89,7 +89,7 @@
       "updated_on": "2024-10-13T13:25:02.835Z"
     },
     {
-      "_id": "efkddtdzbj4mcugz-64fbg7a2-c32ewqdd-v6n6lrrrn3s0pfe2",
+      "_id": "efkddtdzbj4mcugz64fbg7a2c32ewqddv6n6lrrrn3s0pfe2",
       "issue_title": "Only required fields",
       "issue_text": "POST this issue to see the test behavior with a minimum number of fields",
       "created_by": "Duke",
@@ -134,10 +134,9 @@
       "issue_text": "POST this issue to see the test behavior with a minimum number of fields",
       "created_by": "Duke",
       "created_on": "2024-10-15T10:39:07.391Z",
-      "updated_on": "2024-10-15T10:53:55.116Z",
+      "updated_on": "2024-10-16T16:07:57.291Z",
       "open": true,
-      "assigned_to": "Giuanin Lafanà",
-      "id": "i82c6u17wnemwzm59fr7g81cevxa06qsoqectng1y8lu5425"
+      "assigned_to": "Giuanin Lafanà"
     },
     {
       "_id": "orsjvcv1n848xh9mv8xxmacy0pb1asp7rnmx1qrgbb5pddsp",
@@ -208,30 +207,871 @@
       "assigned_to": "Duke",
       "open": true,
       "status_text": "Observing",
-      "id": "t20etw0ppnuxiu7x9kgiwnwbkuae7ynkh4z1x6vyeqyn0asd",
+      "_id": "t20etw0ppnuxiu7x9kgiwnwbkuae7ynkh4z1x6vyeqyn0asd",
       "created_on": "2024-10-15T10:53:55.041Z",
-      "updated_on": "2024-10-15T10:53:55.041Z",
-      "_id": "AGd_5F2"
+      "updated_on": "2024-10-15T10:53:55.041Z"
     },
     {
       "issue_title": "Only required fields",
       "issue_text": "POST this issue to see the test behavior with a minimum number of fields",
       "created_by": "Duke",
-      "id": "s03gt8m7ho0y17olxwo8m7aruc4r03fdc9rcjyzq73u3rwuc",
+      "_id": "s03gt8m7ho0y17olxwo8m7aruc4r03fdc9rcjyzq73u3rwuc",
       "created_on": "2024-10-15T10:53:55.073Z",
       "updated_on": "2024-10-15T10:53:55.073Z",
-      "open": true,
-      "_id": "l9dZGY8"
+      "open": true
     },
     {
       "issue_title": "Functional Test",
       "issue_text": "Test delete of a just created record",
       "created_by": "Duke",
-      "id": "wks2gqyrjkicja7e714hfdth9rr0lxxa7bxpi6nbcmd25jn9",
+      "_id": "wks2gqyrjkicja7e714hfdth9rr0lxxa7bxpi6nbcmd25jn9",
       "created_on": "2024-10-15T10:53:55.140Z",
       "updated_on": "2024-10-15T10:53:55.140Z",
+      "open": true
+    },
+    {
+      "issue_title": "Issue aimed to test the test",
+      "issue_text": "POST this issue to see the test behavior",
+      "created_by": "Duke",
+      "assigned_to": "Duke",
       "open": true,
-      "_id": "VDGV2_6"
+      "status_text": "Observing",
+      "_id": "a8yfuptueonzq4vo3e2t5aabicgiutqylo1mvyfka9j50pki",
+      "created_on": "2024-10-16T10:22:03.995Z",
+      "updated_on": "2024-10-16T10:22:03.995Z"
+    },
+    {
+      "issue_title": "Only required fields",
+      "issue_text": "POST this issue to see the test behavior with a minimum number of fields",
+      "created_by": "Duke",
+      "_id": "rkm3lhhr4ke9fv1fdyc6cj3y2tyxkcgad4zq4glbo5orahad",
+      "created_on": "2024-10-16T10:22:04.025Z",
+      "updated_on": "2024-10-16T10:22:04.025Z",
+      "open": true
+    },
+    {
+      "issue_title": "Issue aimed to test the test",
+      "issue_text": "POST this issue to see the test behavior",
+      "created_by": "Duke",
+      "assigned_to": "Duke",
+      "open": true,
+      "status_text": "Observing",
+      "_id": "8w34b5bgndp4v1orvw3qrzn3kdxfv1guzudnipz9a2379shb",
+      "created_on": "2024-10-16T10:27:49.324Z",
+      "updated_on": "2024-10-16T10:27:49.324Z"
+    },
+    {
+      "issue_title": "Only required fields",
+      "issue_text": "POST this issue to see the test behavior with a minimum number of fields",
+      "created_by": "Duke",
+      "_id": "ehnb279tvdya1pvcvkb71u71v3fub4ohx1n0dtlp5xzwmjxw",
+      "created_on": "2024-10-16T10:27:49.349Z",
+      "updated_on": "2024-10-16T10:27:49.349Z",
+      "open": true
+    },
+    {
+      "issue_title": "Issue aimed to test the test",
+      "issue_text": "POST this issue to see the test behavior",
+      "created_by": "Duke",
+      "assigned_to": "Duke",
+      "open": true,
+      "status_text": "Observing",
+      "_id": "uaj4nlpjo1rk34ufjnprjtr1ele449xxw9h9o01c1pdappmp",
+      "created_on": "2024-10-16T10:31:55.194Z",
+      "updated_on": "2024-10-16T10:31:55.194Z"
+    },
+    {
+      "issue_title": "Only required fields",
+      "issue_text": "POST this issue to see the test behavior with a minimum number of fields",
+      "created_by": "Duke",
+      "_id": "zv6rpm816d18dprf296d6h30486r516i8oqlnaa5aa8kimlb",
+      "created_on": "2024-10-16T10:31:55.217Z",
+      "updated_on": "2024-10-16T10:31:55.217Z",
+      "open": true
+    },
+    {
+      "issue_title": "Issue aimed to test the test",
+      "issue_text": "POST this issue to see the test behavior",
+      "created_by": "Duke",
+      "assigned_to": "Duke",
+      "open": true,
+      "status_text": "Observing",
+      "_id": "67pbtl6ns7w7en1gwldcweybzx90h9m7bvtfm86b0kb7tn3m",
+      "created_on": "2024-10-16T10:32:46.832Z",
+      "updated_on": "2024-10-16T10:32:46.832Z"
+    },
+    {
+      "issue_title": "Issue aimed to test the test",
+      "issue_text": "POST this issue to see the test behavior",
+      "created_by": "Duke",
+      "assigned_to": "Duke",
+      "open": true,
+      "status_text": "Observing",
+      "_id": "gmcx4iirpsnch000mm6c8eb9sts721dbstxubpie5ztrbrnw",
+      "created_on": "2024-10-16T10:42:29.886Z",
+      "updated_on": "2024-10-16T10:42:29.886Z"
+    },
+    {
+      "issue_title": "Only required fields",
+      "issue_text": "POST this issue to see the test behavior with a minimum number of fields",
+      "created_by": "Duke",
+      "_id": "yuiwp7hbq40skt8ctiaxn0issuarnuyq85sak7wwmz2wp1kj",
+      "created_on": "2024-10-16T10:42:29.911Z",
+      "updated_on": "2024-10-16T10:42:29.911Z",
+      "open": true
+    },
+    {
+      "issue_title": "Issue aimed to test the test",
+      "issue_text": "POST this issue to see the test behavior",
+      "created_by": "Duke",
+      "assigned_to": "Duke",
+      "open": true,
+      "status_text": "Observing",
+      "_id": "hczz95ffytinqne68hs4w9i7h5h3ons10x219v2n9b7ix3dv",
+      "created_on": "2024-10-16T10:45:37.116Z",
+      "updated_on": "2024-10-16T10:45:37.116Z"
+    },
+    {
+      "issue_title": "Only required fields",
+      "issue_text": "POST this issue to see the test behavior with a minimum number of fields",
+      "created_by": "Duke",
+      "_id": "laoaqljlj52rhpz3wkxu24t6p06c4egzmtjusnsxd581pj9v",
+      "created_on": "2024-10-16T10:45:37.140Z",
+      "updated_on": "2024-10-16T10:45:37.140Z",
+      "open": true
+    },
+    {
+      "issue_title": "Issue aimed to test the test",
+      "issue_text": "POST this issue to see the test behavior",
+      "created_by": "Duke",
+      "assigned_to": "Duke",
+      "open": true,
+      "status_text": "Observing",
+      "_id": "w7keps7hc6n5iy7bx0x98gck8gulxf5vaqtgegqbjlphqt2a",
+      "created_on": "2024-10-16T10:49:10.234Z",
+      "updated_on": "2024-10-16T10:49:10.234Z"
+    },
+    {
+      "issue_title": "Only required fields",
+      "issue_text": "POST this issue to see the test behavior with a minimum number of fields",
+      "created_by": "Duke",
+      "_id": "tx6kmymhzqp32dfinle908x0wy03gx4cq55xxpbsaprd7qtr",
+      "created_on": "2024-10-16T10:49:10.258Z",
+      "updated_on": "2024-10-16T10:49:10.258Z",
+      "open": true
+    },
+    {
+      "issue_title": "Issue aimed to test the test",
+      "issue_text": "POST this issue to see the test behavior",
+      "created_by": "Duke",
+      "assigned_to": "Duke",
+      "open": true,
+      "status_text": "Observing",
+      "_id": "0fgj425l7fubixxz0ipu0hc9mhjcisfybbaspxqatucxb4b9",
+      "created_on": "2024-10-16T10:52:55.989Z",
+      "updated_on": "2024-10-16T10:52:55.989Z"
+    },
+    {
+      "issue_title": "Only required fields",
+      "issue_text": "POST this issue to see the test behavior with a minimum number of fields",
+      "created_by": "Duke",
+      "_id": "zs9g4nkhozfg17wiwh5h02tjtozznyswnhe637vfyr2se8mb",
+      "created_on": "2024-10-16T10:52:56.013Z",
+      "updated_on": "2024-10-16T10:52:56.013Z",
+      "open": true
+    },
+    {
+      "issue_title": "Issue aimed to test the test",
+      "issue_text": "POST this issue to see the test behavior",
+      "created_by": "Duke",
+      "assigned_to": "Duke",
+      "open": true,
+      "status_text": "Observing",
+      "_id": "x4qdgtszb3cktkgzduvs558t73bntmkxr44nvqiy23judpsh",
+      "created_on": "2024-10-16T11:01:30.662Z",
+      "updated_on": "2024-10-16T11:01:30.662Z"
+    },
+    {
+      "issue_title": "Only required fields",
+      "issue_text": "POST this issue to see the test behavior with a minimum number of fields",
+      "created_by": "Duke",
+      "_id": "2reua0k8kig8414zfykjji1jicm8s6aw1latck5i0vs0mem9",
+      "created_on": "2024-10-16T11:01:30.687Z",
+      "updated_on": "2024-10-16T11:01:30.687Z",
+      "open": true
+    },
+    {
+      "issue_title": "Issue aimed to test the test",
+      "issue_text": "POST this issue to see the test behavior",
+      "created_by": "Duke",
+      "assigned_to": "Duke",
+      "open": true,
+      "status_text": "Observing",
+      "_id": "3a45rz7mztpw4e7cg0s1syxetbxx2lame8fxpso53bnk8f3c",
+      "created_on": "2024-10-16T11:03:35.211Z",
+      "updated_on": "2024-10-16T11:03:35.211Z"
+    },
+    {
+      "issue_title": "Only required fields",
+      "issue_text": "POST this issue to see the test behavior with a minimum number of fields",
+      "created_by": "Duke",
+      "_id": "hepsadl9odvw0bnwj61zxzdnjxr3t5ue6dgj3b834sxm7qg3",
+      "created_on": "2024-10-16T11:03:35.235Z",
+      "updated_on": "2024-10-16T11:03:35.235Z",
+      "open": true
+    },
+    {
+      "issue_title": "Issue aimed to test the test",
+      "issue_text": "POST this issue to see the test behavior",
+      "created_by": "Duke",
+      "assigned_to": "Duke",
+      "open": true,
+      "status_text": "Observing",
+      "_id": "kl3peai9busjy5vhcbecn0hubwct1jt5geyp806l312fffw8",
+      "created_on": "2024-10-16T11:10:05.254Z",
+      "updated_on": "2024-10-16T11:10:05.254Z"
+    },
+    {
+      "issue_title": "Only required fields",
+      "issue_text": "POST this issue to see the test behavior with a minimum number of fields",
+      "created_by": "Duke",
+      "_id": "9wvgkp7cqslbv4fjos8zdrwf3l2lzoxlp0421retipy5ntta",
+      "created_on": "2024-10-16T11:10:05.277Z",
+      "updated_on": "2024-10-16T11:10:05.277Z",
+      "open": true
+    },
+    {
+      "issue_title": "Issue aimed to test the test",
+      "issue_text": "POST this issue to see the test behavior",
+      "created_by": "Duke",
+      "assigned_to": "Duke",
+      "open": true,
+      "status_text": "Observing",
+      "_id": "a3is0r3n7ywj1klv40l84kx395s7ejflorarxltwncuoyetf",
+      "created_on": "2024-10-16T11:12:14.566Z",
+      "updated_on": "2024-10-16T11:12:14.566Z"
+    },
+    {
+      "issue_title": "Only required fields",
+      "issue_text": "POST this issue to see the test behavior with a minimum number of fields",
+      "created_by": "Duke",
+      "_id": "0wa15680b88aabgznwsdpngbdzt2u0fg5ev9f2ih4lip6sfe",
+      "created_on": "2024-10-16T11:12:14.590Z",
+      "updated_on": "2024-10-16T11:12:14.590Z",
+      "open": true
+    },
+    {
+      "issue_title": "Issue aimed to test the test",
+      "issue_text": "POST this issue to see the test behavior",
+      "created_by": "Duke",
+      "assigned_to": "Duke",
+      "open": true,
+      "status_text": "Observing",
+      "_id": "qkuqbki4fnb5ounir8bkziombfnnkp8ti3o2e30zdbkqjsrb",
+      "created_on": "2024-10-16T11:14:25.237Z",
+      "updated_on": "2024-10-16T11:14:25.237Z"
+    },
+    {
+      "issue_title": "Only required fields",
+      "issue_text": "POST this issue to see the test behavior with a minimum number of fields",
+      "created_by": "Duke",
+      "_id": "9rntha65e437byn52zvv0mzkykd8txznqynsjubc2yzdutdo",
+      "created_on": "2024-10-16T11:14:25.261Z",
+      "updated_on": "2024-10-16T11:14:25.261Z",
+      "open": true
+    },
+    {
+      "issue_title": "Issue aimed to test the test",
+      "issue_text": "POST this issue to see the test behavior",
+      "created_by": "Duke",
+      "assigned_to": "Duke",
+      "open": true,
+      "status_text": "Observing",
+      "_id": "yt1wl0l3br3b5s1bx2sa3xgkihe75ifbkoxfkdiwmp3vht5h",
+      "created_on": "2024-10-16T11:14:48.073Z",
+      "updated_on": "2024-10-16T11:14:48.073Z"
+    },
+    {
+      "issue_title": "Issue aimed to test the test",
+      "issue_text": "POST this issue to see the test behavior",
+      "created_by": "Duke",
+      "assigned_to": "Duke",
+      "open": true,
+      "status_text": "Observing",
+      "_id": "oewssoywl6qzhvipccnkkjl6f47t8hhinj0c7h30dy29lygo",
+      "created_on": "2024-10-16T11:17:16.625Z",
+      "updated_on": "2024-10-16T11:17:16.625Z"
+    },
+    {
+      "issue_title": "Only required fields",
+      "issue_text": "POST this issue to see the test behavior with a minimum number of fields",
+      "created_by": "Duke",
+      "_id": "8tpm5f3f55nivpew0hmi8jtukw7efptqxoanpokjo3az4oe9",
+      "created_on": "2024-10-16T11:17:16.649Z",
+      "updated_on": "2024-10-16T11:17:16.649Z",
+      "open": true
+    },
+    {
+      "issue_title": "Issue aimed to test the test",
+      "issue_text": "POST this issue to see the test behavior",
+      "created_by": "Duke",
+      "assigned_to": "Duke",
+      "open": true,
+      "status_text": "Observing",
+      "_id": "hudde0eym7ss0qv6uqklcjwalm9yy1wpqygu9av02h1nfdtb",
+      "created_on": "2024-10-16T11:17:24.560Z",
+      "updated_on": "2024-10-16T11:17:24.560Z"
+    },
+    {
+      "issue_title": "Only required fields",
+      "issue_text": "POST this issue to see the test behavior with a minimum number of fields",
+      "created_by": "Duke",
+      "_id": "y7p0169459cixtzrm1y51leaioibz4154c4m1qyq2uhirwow",
+      "created_on": "2024-10-16T11:17:24.584Z",
+      "updated_on": "2024-10-16T11:17:24.584Z",
+      "open": true
+    },
+    {
+      "issue_title": "Issue aimed to test the test",
+      "issue_text": "POST this issue to see the test behavior",
+      "created_by": "Duke",
+      "assigned_to": "Duke",
+      "open": true,
+      "status_text": "Observing",
+      "_id": "ux0tdgewfsuy18kdje80w76ouefwvs23s9mvaf21fjm1xt07",
+      "created_on": "2024-10-16T14:53:47.198Z",
+      "updated_on": "2024-10-16T14:53:47.198Z"
+    },
+    {
+      "issue_title": "Only required fields",
+      "issue_text": "POST this issue to see the test behavior with a minimum number of fields",
+      "created_by": "Duke",
+      "_id": "6kr8satopvly8b4mrv80ds7r8lm23h6c7rs9vm85q3542k1i",
+      "created_on": "2024-10-16T14:53:47.233Z",
+      "updated_on": "2024-10-16T14:53:47.233Z",
+      "open": true
+    },
+    {
+      "issue_title": "Issue aimed to test the test",
+      "issue_text": "POST this issue to see the test behavior",
+      "created_by": "Duke",
+      "assigned_to": "Duke",
+      "open": true,
+      "status_text": "Observing",
+      "_id": "ec1u5pq8z00tntmc14fvrj27pm7wc2aye19idbyi060rrq03",
+      "created_on": "2024-10-16T15:08:09.503Z",
+      "updated_on": "2024-10-16T15:08:09.503Z"
+    },
+    {
+      "issue_title": "Only required fields",
+      "issue_text": "POST this issue to see the test behavior with a minimum number of fields",
+      "created_by": "Duke",
+      "_id": "cljb3drhyoad8qo7nofa1f2xvjww4tjc74gbi8x8zuvqwjjq",
+      "created_on": "2024-10-16T15:08:09.537Z",
+      "updated_on": "2024-10-16T15:08:09.537Z",
+      "open": true
+    },
+    {
+      "issue_title": "Issue aimed to test the test",
+      "issue_text": "POST this issue to see the test behavior",
+      "created_by": "Duke",
+      "assigned_to": "Duke",
+      "open": true,
+      "status_text": "Observing",
+      "_id": "2mp79yyp3f6hv85ytvu8q1kkhs5mmy2oexaoyetj33hzzi0u",
+      "created_on": "2024-10-16T15:08:57.368Z",
+      "updated_on": "2024-10-16T15:08:57.368Z"
+    },
+    {
+      "issue_title": "Only required fields",
+      "issue_text": "POST this issue to see the test behavior with a minimum number of fields",
+      "created_by": "Duke",
+      "_id": "3y21jk5dcnoiquysgd1whdc5xdf0z4zufoddfoa7b3n7b0ny",
+      "created_on": "2024-10-16T15:08:57.392Z",
+      "updated_on": "2024-10-16T15:08:57.392Z",
+      "open": true
+    },
+    {
+      "issue_title": "Issue aimed to test the test",
+      "issue_text": "POST this issue to see the test behavior",
+      "created_by": "Duke",
+      "assigned_to": "Duke",
+      "open": true,
+      "status_text": "Observing",
+      "_id": "br858o77nt0hf8vxfj7ndw3b0hhok1m2qryx44ab9f3p76s5",
+      "created_on": "2024-10-16T15:09:08.748Z",
+      "updated_on": "2024-10-16T15:09:08.748Z"
+    },
+    {
+      "issue_title": "Only required fields",
+      "issue_text": "POST this issue to see the test behavior with a minimum number of fields",
+      "created_by": "Duke",
+      "_id": "ejv8ej93koexss6nieua3t1hmyqq1xzr2jcr93wklzh1d1an",
+      "created_on": "2024-10-16T15:09:08.775Z",
+      "updated_on": "2024-10-16T15:09:08.775Z",
+      "open": true
+    },
+    {
+      "issue_title": "Stop pippoling",
+      "issue_text": "Pippoling is the best problem in world.",
+      "created_by": "Duke",
+      "assigned_to": "",
+      "status_text": "",
+      "_id": "p689hs6v18qk69c1z3hc2heztnbusza8i6a5lumbyy6oqg7q",
+      "created_on": "2024-10-16T15:09:46.383Z",
+      "updated_on": "2024-10-16T15:09:46.383Z",
+      "open": true
+    },
+    {
+      "issue_title": "Stop pippoling",
+      "issue_text": "Pippoling is the best problem in world.",
+      "created_by": "Duke",
+      "assigned_to": "jijjin",
+      "status_text": "Changed",
+      "_id": "4sxtgk0eu39sn1eqe8lb7spgpvqagmlc7bcllvotxo6m7pzx",
+      "created_on": "2024-10-16T15:10:21.146Z",
+      "updated_on": "2024-10-16T15:10:21.146Z",
+      "open": true
+    },
+    {
+      "issue_title": "Issue aimed to test the test",
+      "issue_text": "POST this issue to see the test behavior",
+      "created_by": "Duke",
+      "assigned_to": "Duke",
+      "open": true,
+      "status_text": "Observing",
+      "_id": "0dzpxsmagha2nshi16q2hk22r048lakumr578igw3f5rdq0v",
+      "created_on": "2024-10-16T15:18:01.606Z",
+      "updated_on": "2024-10-16T15:18:01.606Z"
+    },
+    {
+      "issue_title": "Only required fields",
+      "issue_text": "POST this issue to see the test behavior with a minimum number of fields",
+      "created_by": "Duke",
+      "_id": "50pnq8azrbarbkrmhfnr0n39q6sf9p23yp2vcjgwth3ob62q",
+      "created_on": "2024-10-16T15:18:01.630Z",
+      "updated_on": "2024-10-16T15:18:01.630Z",
+      "open": true
+    },
+    {
+      "issue_title": "Issue aimed to test the test",
+      "issue_text": "POST this issue to see the test behavior",
+      "created_by": "Duke",
+      "assigned_to": "Duke",
+      "open": true,
+      "status_text": "Observing",
+      "_id": "5wnz6nki3nnrvgnhyw12jsi890wets0fd46bohgqfu2gfhvq",
+      "created_on": "2024-10-16T15:18:54.382Z",
+      "updated_on": "2024-10-16T15:18:54.382Z"
+    },
+    {
+      "issue_title": "Only required fields",
+      "issue_text": "POST this issue to see the test behavior with a minimum number of fields",
+      "created_by": "Duke",
+      "_id": "z43hawyyu28tprjuugdts7o3mrkmg84dyypczgr6u1jfsy34",
+      "created_on": "2024-10-16T15:18:54.410Z",
+      "updated_on": "2024-10-16T15:18:54.410Z",
+      "open": true
+    },
+    {
+      "issue_title": "Issue aimed to test the test",
+      "issue_text": "POST this issue to see the test behavior",
+      "created_by": "Duke",
+      "assigned_to": "Duke",
+      "open": true,
+      "status_text": "Observing",
+      "_id": "3ydppk0sxrzqcxedx9blffyurafyrjuvxs6pfgt61jdny0jp",
+      "created_on": "2024-10-16T15:32:54.389Z",
+      "updated_on": "2024-10-16T15:32:54.389Z"
+    },
+    {
+      "issue_title": "Only required fields",
+      "issue_text": "POST this issue to see the test behavior with a minimum number of fields",
+      "created_by": "Duke",
+      "_id": "w30gs0i2dp2y8j115lrkd64mkek3fqo259bw9m8t44cbnoqp",
+      "created_on": "2024-10-16T15:32:54.413Z",
+      "updated_on": "2024-10-16T15:32:54.413Z",
+      "open": true
+    },
+    {
+      "issue_title": "Issue aimed to test the test",
+      "issue_text": "POST this issue to see the test behavior",
+      "created_by": "Duke",
+      "assigned_to": "Duke",
+      "open": true,
+      "status_text": "Observing",
+      "_id": "d4wsznpuwy1rnw6tkn4msk1gbckmespljytfl4i19b8tisot",
+      "created_on": "2024-10-16T15:34:44.486Z",
+      "updated_on": "2024-10-16T15:34:44.486Z"
+    },
+    {
+      "issue_title": "Only required fields",
+      "issue_text": "POST this issue to see the test behavior with a minimum number of fields",
+      "created_by": "Duke",
+      "_id": "hzknmyfrhjnfdwuz2g7cqkzxfmkd1s5pcbcrcax455mubtew",
+      "created_on": "2024-10-16T15:34:44.510Z",
+      "updated_on": "2024-10-16T15:34:44.510Z",
+      "open": true
+    },
+    {
+      "issue_title": "Issue aimed to test the test",
+      "issue_text": "POST this issue to see the test behavior",
+      "created_by": "Duke",
+      "assigned_to": "Duke",
+      "open": true,
+      "status_text": "Observing",
+      "_id": "kkmkjcxahwunnt11bjyq4rz9p191luv1k9wub724ozix6s9x",
+      "created_on": "2024-10-16T15:35:43.757Z",
+      "updated_on": "2024-10-16T15:35:43.757Z"
+    },
+    {
+      "issue_title": "Only required fields",
+      "issue_text": "POST this issue to see the test behavior with a minimum number of fields",
+      "created_by": "Duke",
+      "_id": "f7hk4ozb92sq2iztrjs783s46byzhpwlmv6wygwz1qoldkfd",
+      "created_on": "2024-10-16T15:35:43.781Z",
+      "updated_on": "2024-10-16T15:35:43.781Z",
+      "open": true
+    },
+    {
+      "issue_title": "Issue aimed to test the test",
+      "issue_text": "POST this issue to see the test behavior",
+      "created_by": "Duke",
+      "assigned_to": "Duke",
+      "open": true,
+      "status_text": "Observing",
+      "_id": "kq2z373owubxhsgy9zmlc6b3280yrn8mspd99da99p6aq68f",
+      "created_on": "2024-10-16T15:37:53.425Z",
+      "updated_on": "2024-10-16T15:37:53.425Z"
+    },
+    {
+      "issue_title": "Only required fields",
+      "issue_text": "POST this issue to see the test behavior with a minimum number of fields",
+      "created_by": "Duke",
+      "_id": "6ilmxgrrnmrqv4qwxwhwb03jegdd97h5dtgilwm4cn58vair",
+      "created_on": "2024-10-16T15:37:53.450Z",
+      "updated_on": "2024-10-16T15:37:53.450Z",
+      "open": true
+    },
+    {
+      "issue_title": "Issue aimed to test the test",
+      "issue_text": "POST this issue to see the test behavior",
+      "created_by": "Duke",
+      "assigned_to": "Duke",
+      "open": true,
+      "status_text": "Observing",
+      "_id": "kpxkq1703nrch003ed2m4cguw7dsxdjovn9dlkhjixe449gl",
+      "created_on": "2024-10-16T15:38:26.869Z",
+      "updated_on": "2024-10-16T15:38:26.869Z"
+    },
+    {
+      "issue_title": "Only required fields",
+      "issue_text": "POST this issue to see the test behavior with a minimum number of fields",
+      "created_by": "Duke",
+      "_id": "vn3efjggobiz43xc12w7rv7wcuiqejn96sj4bx6rs5186zzk",
+      "created_on": "2024-10-16T15:38:26.893Z",
+      "updated_on": "2024-10-16T15:38:26.893Z",
+      "open": true
+    },
+    {
+      "issue_title": "Issue aimed to test the test",
+      "issue_text": "POST this issue to see the test behavior",
+      "created_by": "Duke",
+      "assigned_to": "Duke",
+      "open": true,
+      "status_text": "Observing",
+      "_id": "q54ghhd2b9tmbvh329d76lqinf00okk04v6gkm4vdap9rysd",
+      "created_on": "2024-10-16T15:41:39.978Z",
+      "updated_on": "2024-10-16T15:41:39.978Z"
+    },
+    {
+      "issue_title": "Only required fields",
+      "issue_text": "POST this issue to see the test behavior with a minimum number of fields",
+      "created_by": "Duke",
+      "_id": "juc79dkibxwtg4glqkelez67yas6mq5zu3b5hlwtd8nobnu0",
+      "created_on": "2024-10-16T15:41:40.002Z",
+      "updated_on": "2024-10-16T15:41:40.002Z",
+      "open": true
+    },
+    {
+      "issue_title": "Issue aimed to test the test",
+      "issue_text": "POST this issue to see the test behavior",
+      "created_by": "Duke",
+      "assigned_to": "Duke",
+      "open": true,
+      "status_text": "Observing",
+      "_id": "1ypp8jqrgdeqv74iyyqy8mlvq78cjgs4na01gewnjta7rrhm",
+      "created_on": "2024-10-16T15:42:56.558Z",
+      "updated_on": "2024-10-16T15:42:56.558Z"
+    },
+    {
+      "issue_title": "Only required fields",
+      "issue_text": "POST this issue to see the test behavior with a minimum number of fields",
+      "created_by": "Duke",
+      "_id": "3klacdqbiuny3vzmxfekvsc60vf65s2uxqht44z6vivx6ulz",
+      "created_on": "2024-10-16T15:42:56.581Z",
+      "updated_on": "2024-10-16T15:42:56.581Z",
+      "open": true
+    },
+    {
+      "issue_title": "Issue aimed to test the test",
+      "issue_text": "POST this issue to see the test behavior",
+      "created_by": "Duke",
+      "assigned_to": "Duke",
+      "open": true,
+      "status_text": "Observing",
+      "_id": "wnrs7yptabcd2eels58kxf8oryfvsiatsxlv42lf1g4t40f2",
+      "created_on": "2024-10-16T15:45:42.589Z",
+      "updated_on": "2024-10-16T15:45:42.589Z"
+    },
+    {
+      "issue_title": "Only required fields",
+      "issue_text": "POST this issue to see the test behavior with a minimum number of fields",
+      "created_by": "Duke",
+      "_id": "za6ri3u1upclipkdnql213mgnmg45hpqybgbp5lqkvaqpu16",
+      "created_on": "2024-10-16T15:45:42.613Z",
+      "updated_on": "2024-10-16T15:45:42.613Z",
+      "open": true
+    },
+    {
+      "issue_title": "Issue aimed to test the test",
+      "issue_text": "POST this issue to see the test behavior",
+      "created_by": "Duke",
+      "assigned_to": "Duke",
+      "open": true,
+      "status_text": "Observing",
+      "_id": "yaxiok47xkdohl6emu76jwc8ans3saaw7l27j9ga0qyfipbt",
+      "created_on": "2024-10-16T15:50:06.519Z",
+      "updated_on": "2024-10-16T15:50:06.519Z"
+    },
+    {
+      "issue_title": "Only required fields",
+      "issue_text": "POST this issue to see the test behavior with a minimum number of fields",
+      "created_by": "Duke",
+      "_id": "tht1daqw77oo43kq47dkgcx6k77x71snksx0g19b0qxf0o74",
+      "created_on": "2024-10-16T15:50:06.543Z",
+      "updated_on": "2024-10-16T15:50:06.543Z",
+      "open": true
+    },
+    {
+      "issue_title": "Issue aimed to test the test",
+      "issue_text": "POST this issue to see the test behavior",
+      "created_by": "Duke",
+      "assigned_to": "Duke",
+      "open": true,
+      "status_text": "Observing",
+      "_id": "0fo8l4cl4sh58s2aq3q2cusgcritz28uwht0m8ur4lterlde",
+      "created_on": "2024-10-16T15:53:13.503Z",
+      "updated_on": "2024-10-16T15:53:13.503Z"
+    },
+    {
+      "issue_title": "Only required fields",
+      "issue_text": "POST this issue to see the test behavior with a minimum number of fields",
+      "created_by": "Duke",
+      "_id": "yk2qpoqsqljkem2wyn6lpt9oviphm8lijbha3dqxfr16horx",
+      "created_on": "2024-10-16T15:53:13.527Z",
+      "updated_on": "2024-10-16T15:53:13.527Z",
+      "open": true
+    },
+    {
+      "issue_title": "Issue aimed to test the test",
+      "issue_text": "POST this issue to see the test behavior",
+      "created_by": "Duke",
+      "assigned_to": "Duke",
+      "open": true,
+      "status_text": "Observing",
+      "_id": "5wy97km4on2ttn8zvnf7jfg5ddqqlh02q7w1dlj4y46hf6ex",
+      "created_on": "2024-10-16T15:54:22.356Z",
+      "updated_on": "2024-10-16T15:54:22.356Z"
+    },
+    {
+      "issue_title": "Only required fields",
+      "issue_text": "POST this issue to see the test behavior with a minimum number of fields",
+      "created_by": "Duke",
+      "_id": "84fhrz18h7ios1h5oslgymvd2vp6mg892a5xyhp10s99959v",
+      "created_on": "2024-10-16T15:54:22.380Z",
+      "updated_on": "2024-10-16T15:54:22.380Z",
+      "open": true
+    },
+    {
+      "issue_title": "Issue aimed to test the test",
+      "issue_text": "POST this issue to see the test behavior",
+      "created_by": "Duke",
+      "assigned_to": "Duke",
+      "open": true,
+      "status_text": "Observing",
+      "_id": "fepjgt4qzbzvb2b4mnrv39vag4kl5ou8gyxnpsd9d9qqb4r4",
+      "created_on": "2024-10-16T15:55:32.829Z",
+      "updated_on": "2024-10-16T15:55:32.829Z"
+    },
+    {
+      "issue_title": "Only required fields",
+      "issue_text": "POST this issue to see the test behavior with a minimum number of fields",
+      "created_by": "Duke",
+      "_id": "mfau675tosvjz0dyha38yk705pzxf88g3owqnpl0vbppxmgv",
+      "created_on": "2024-10-16T15:55:32.853Z",
+      "updated_on": "2024-10-16T15:55:32.853Z",
+      "open": true
+    },
+    {
+      "issue_title": "Issue aimed to test the test",
+      "issue_text": "POST this issue to see the test behavior",
+      "created_by": "Duke",
+      "assigned_to": "Duke",
+      "open": true,
+      "status_text": "Observing",
+      "_id": "777nwrfetu26nagj3iargssi4hcmrkrqx6ir7ns9twm68nbq",
+      "created_on": "2024-10-16T15:57:01.227Z",
+      "updated_on": "2024-10-16T15:57:01.227Z"
+    },
+    {
+      "issue_title": "Only required fields",
+      "issue_text": "POST this issue to see the test behavior with a minimum number of fields",
+      "created_by": "Duke",
+      "_id": "7cy093jupr1zoayuhb5xvacea8htdnv8rgusb61joba0pyv5",
+      "created_on": "2024-10-16T15:57:01.252Z",
+      "updated_on": "2024-10-16T15:57:01.252Z",
+      "open": true
+    },
+    {
+      "issue_title": "Issue aimed to test the test",
+      "issue_text": "POST this issue to see the test behavior",
+      "created_by": "Duke",
+      "assigned_to": "Duke",
+      "open": true,
+      "status_text": "Observing",
+      "_id": "6ay1fdp9hrbg6r92oamyxm5s9zextfvfpw1kmdop5k0bsd8v",
+      "created_on": "2024-10-16T15:58:13.538Z",
+      "updated_on": "2024-10-16T15:58:13.538Z"
+    },
+    {
+      "issue_title": "Only required fields",
+      "issue_text": "POST this issue to see the test behavior with a minimum number of fields",
+      "created_by": "Duke",
+      "_id": "zvmkhpwhkbc171vhf2d9rss5n21wy1v9lbp7062bzw554007",
+      "created_on": "2024-10-16T15:58:13.562Z",
+      "updated_on": "2024-10-16T15:58:13.562Z",
+      "open": true
+    },
+    {
+      "issue_title": "Issue aimed to test the test",
+      "issue_text": "POST this issue to see the test behavior",
+      "created_by": "Duke",
+      "assigned_to": "Duke",
+      "open": true,
+      "status_text": "Observing",
+      "_id": "5toe961l8rpnhxfamjsxdqxo7dd8lvb1syjbs3bl9eg1sfuz",
+      "created_on": "2024-10-16T15:59:45.454Z",
+      "updated_on": "2024-10-16T15:59:45.454Z"
+    },
+    {
+      "issue_title": "Only required fields",
+      "issue_text": "POST this issue to see the test behavior with a minimum number of fields",
+      "created_by": "Duke",
+      "_id": "ocob1d3new1gwa3087yt4y7dhg0931gmc875d3bjk4u3dsdo",
+      "created_on": "2024-10-16T15:59:45.478Z",
+      "updated_on": "2024-10-16T15:59:45.478Z",
+      "open": true
+    },
+    {
+      "issue_title": "Issue aimed to test the test",
+      "issue_text": "POST this issue to see the test behavior",
+      "created_by": "Duke",
+      "assigned_to": "Duke",
+      "open": true,
+      "status_text": "Observing",
+      "_id": "nljxke0mro1c4ohi6ecaxvgrj26nfvh8fy2r4m6ypm7acipw",
+      "created_on": "2024-10-16T16:01:19.440Z",
+      "updated_on": "2024-10-16T16:01:19.440Z"
+    },
+    {
+      "issue_title": "Only required fields",
+      "issue_text": "POST this issue to see the test behavior with a minimum number of fields",
+      "created_by": "Duke",
+      "_id": "tkbtocwznzd2lqgcfnssd7gmc2cjq1bw3lp8lnmnwhjiikdv",
+      "created_on": "2024-10-16T16:01:19.465Z",
+      "updated_on": "2024-10-16T16:01:19.465Z",
+      "open": true
+    },
+    {
+      "issue_title": "Issue aimed to test the test",
+      "issue_text": "POST this issue to see the test behavior",
+      "created_by": "Duke",
+      "assigned_to": "Duke",
+      "open": true,
+      "status_text": "Observing",
+      "_id": "nxfw138j5yzb3hbqtmn10nl9jubm39ccyu3p9kifar227wem",
+      "created_on": "2024-10-16T16:03:25.980Z",
+      "updated_on": "2024-10-16T16:03:25.980Z"
+    },
+    {
+      "issue_title": "Only required fields",
+      "issue_text": "POST this issue to see the test behavior with a minimum number of fields",
+      "created_by": "Duke",
+      "_id": "1epjt8oht612xl7b15i98lnuctjpxvfbwsewuep99jne4vxf",
+      "created_on": "2024-10-16T16:03:26.005Z",
+      "updated_on": "2024-10-16T16:03:26.005Z",
+      "open": true
+    },
+    {
+      "issue_title": "Issue aimed to test the test",
+      "issue_text": "POST this issue to see the test behavior",
+      "created_by": "Duke",
+      "assigned_to": "Duke",
+      "open": true,
+      "status_text": "Observing",
+      "_id": "k4bgvpjebt1qd44d4bvlmad45kjoysit6enfvhpda5bn6ti4",
+      "created_on": "2024-10-16T16:05:12.260Z",
+      "updated_on": "2024-10-16T16:05:12.260Z"
+    },
+    {
+      "issue_title": "Only required fields",
+      "issue_text": "POST this issue to see the test behavior with a minimum number of fields",
+      "created_by": "Duke",
+      "_id": "ctaij4wv4l6vhvfwa5oyvq66uqcs01zie17glp7ybavjdnzb",
+      "created_on": "2024-10-16T16:05:12.284Z",
+      "updated_on": "2024-10-16T16:05:12.284Z",
+      "open": true
+    },
+    {
+      "issue_title": "Issue aimed to test the test",
+      "issue_text": "POST this issue to see the test behavior",
+      "created_by": "Duke",
+      "assigned_to": "Duke",
+      "open": true,
+      "status_text": "Observing",
+      "_id": "kg91dq5axq5zaamwor6m2sydumc0ania3o8c4sroa30gonus",
+      "created_on": "2024-10-16T16:06:18.927Z",
+      "updated_on": "2024-10-16T16:06:18.927Z"
+    },
+    {
+      "issue_title": "Only required fields",
+      "issue_text": "POST this issue to see the test behavior with a minimum number of fields",
+      "created_by": "Duke",
+      "_id": "cepwone3xgjp2ps11to81j9ekpzmx3q27vdqu51l1aqx3gs7",
+      "created_on": "2024-10-16T16:06:18.951Z",
+      "updated_on": "2024-10-16T16:06:18.951Z",
+      "open": true
+    },
+    {
+      "issue_title": "Issue aimed to test the test",
+      "issue_text": "POST this issue to see the test behavior",
+      "created_by": "Duke",
+      "assigned_to": "Duke",
+      "open": true,
+      "status_text": "Observing",
+      "_id": "7sh6xw6hn446emuf000n8wtme43xdausc5yu1aj246iiw7xz",
+      "created_on": "2024-10-16T16:07:57.228Z",
+      "updated_on": "2024-10-16T16:07:57.228Z"
+    },
+    {
+      "issue_title": "Only required fields",
+      "issue_text": "POST this issue to see the test behavior with a minimum number of fields",
+      "created_by": "Duke",
+      "_id": "n64py5j4jqkjd6v1afkj8j5s2ym05cvwu57gq5xxuqvogw2y",
+      "created_on": "2024-10-16T16:07:57.252Z",
+      "updated_on": "2024-10-16T16:07:57.252Z",
+      "open": true
     }
   ]
 }
