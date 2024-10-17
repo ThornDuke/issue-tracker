@@ -35,8 +35,6 @@ suite("Functional Tests", function () {
         .post("/api/issues/fccthornton")
         .send(everyFieldObj)
         .end(function (err, res) {
-          console.log("#=>", "fcc");
-
           assert.equal(res.status, 200);
           assert.property(res.body, "_id");
           assert.property(res.body, "created_on");
@@ -116,14 +114,14 @@ suite("Functional Tests", function () {
         .keepOpen()
         .put("/api/issues/apitest")
         .send({
-          _id: "i82c6u17wnemwzm59fr7g81cevxa06qsoqectng1y8lu5425",
+          _id: "7o7pdoqwlcur3w85-536symp2-zd47snwe-ziavb73cahn58eb2",
           issue_title: "Reassigned issue",
         })
         .end(function (err, res) {
           assert.equal(res.status, 200);
           assert.exists(res.body);
           assert.equal(res.body["result"], "successfully updated");
-          assert.equal(res.body["_id"], "i82c6u17wnemwzm59fr7g81cevxa06qsoqectng1y8lu5425");
+          assert.equal(res.body["_id"], "7o7pdoqwlcur3w85-536symp2-zd47snwe-ziavb73cahn58eb2");
           done();
         });
     });
@@ -133,7 +131,7 @@ suite("Functional Tests", function () {
         .keepOpen()
         .put("/api/issues/apitest")
         .send({
-          _id: "i82c6u17wnemwzm59fr7g81cevxa06qsoqectng1y8lu5425",
+          _id: "7o7pdoqwlcur3w85-536symp2-zd47snwe-ziavb73cahn58eb2",
           issue_title: "Reassigned issue to multiple",
           assigned_to: "Giuanin Lafanà",
         })
@@ -141,7 +139,7 @@ suite("Functional Tests", function () {
           assert.equal(res.status, 200);
           assert.exists(res.body);
           assert.equal(res.body["result"], "successfully updated");
-          assert.equal(res.body["_id"], "i82c6u17wnemwzm59fr7g81cevxa06qsoqectng1y8lu5425");
+          assert.equal(res.body["_id"], "7o7pdoqwlcur3w85-536symp2-zd47snwe-ziavb73cahn58eb2");
           done();
         });
     });

@@ -169,6 +169,189 @@
       "created_on": "2024-10-17T10:35:43.064Z",
       "updated_on": "2024-10-17T10:35:43.064Z",
       "open": true
+    },
+    {
+      "issue_title": "Issue aimed to test the test",
+      "issue_text": "POST this issue to see the test behavior",
+      "created_by": "Duke",
+      "assigned_to": "Duke",
+      "open": true,
+      "status_text": "Observing",
+      "project": "fccthornton",
+      "_id": "ppahrgzwg5k508os-6udnuzzt-lgkstumh-pnorszsm9uyap86k",
+      "created_on": "2024-10-17T12:31:19.544Z",
+      "updated_on": "2024-10-17T12:31:19.544Z"
+    },
+    {
+      "issue_title": "Only required fields",
+      "issue_text": "POST this issue to see the test behavior with a minimum number of fields",
+      "created_by": "Duke",
+      "project": "apitest",
+      "_id": "ef9k3uutcuvb0aj0-8yksmb3t-d9lxviuw-a8lh25wsieqdj678",
+      "created_on": "2024-10-17T12:31:19.579Z",
+      "updated_on": "2024-10-17T12:31:19.579Z",
+      "open": true
+    },
+    {
+      "issue_title": "Functional Test",
+      "issue_text": "Test delete of a just created record",
+      "created_by": "Duke",
+      "project": "apitest",
+      "_id": "nqjoo6q6vazgmkzv-dqfk90ys-d8dycqnv-wkticee9qqrrlsy5",
+      "created_on": "2024-10-17T12:31:19.629Z",
+      "updated_on": "2024-10-17T12:31:19.629Z",
+      "open": true
+    },
+    {
+      "issue_title": "Issue aimed to test the test",
+      "issue_text": "POST this issue to see the test behavior",
+      "created_by": "Duke",
+      "assigned_to": "Duke",
+      "open": true,
+      "status_text": "Observing",
+      "project": "fccthornton",
+      "_id": "4srvll3qipy4qxxt-1jgan1jk-0kqu4pte-qzv651x2tcesd2ez",
+      "created_on": "2024-10-17T12:38:26.533Z",
+      "updated_on": "2024-10-17T12:38:26.533Z"
+    },
+    {
+      "issue_title": "Reassigned issue to multiple",
+      "issue_text": "POST this issue to see the test behavior with a minimum number of fields",
+      "created_by": "Duke",
+      "project": "apitest",
+      "_id": "7o7pdoqwlcur3w85-536symp2-zd47snwe-ziavb73cahn58eb2",
+      "created_on": "2024-10-17T12:38:26.556Z",
+      "updated_on": "2024-10-17T12:46:24.847Z",
+      "open": true,
+      "assigned_to": "Giuanin Lafanà"
+    },
+    {
+      "issue_title": "Functional Test",
+      "issue_text": "Test delete of a just created record",
+      "created_by": "Duke",
+      "project": "apitest",
+      "_id": "54p66ck7vv2dqa86-o2xp62st-iqv9tgnb-27fhy9lbly2cnps4",
+      "created_on": "2024-10-17T12:38:26.605Z",
+      "updated_on": "2024-10-17T12:38:26.605Z",
+      "open": true
+    },
+    {
+      "issue_title": "Issue aimed to test the test",
+      "issue_text": "POST this issue to see the test behavior",
+      "created_by": "Duke",
+      "assigned_to": "Duke",
+      "open": true,
+      "status_text": "Observing",
+      "project": "fccthornton",
+      "_id": "v9ah3bsgagz7s30h-hsrym4jy-3su70tbx-2pcr5weuuxp9m3p1",
+      "created_on": "2024-10-17T12:41:23.233Z",
+      "updated_on": "2024-10-17T12:41:23.233Z"
+    },
+    {
+      "issue_title": "Only required fields",
+      "issue_text": "POST this issue to see the test behavior with a minimum number of fields",
+      "created_by": "Duke",
+      "project": "apitest",
+      "_id": "9yz8d9izalgy9nhy-ldrc9r7r-hk87eixk-y4wa5lry9st5ndo7",
+      "created_on": "2024-10-17T12:41:23.258Z",
+      "updated_on": "2024-10-17T12:41:23.258Z",
+      "open": true
+    },
+    {
+      "issue_title": "Functional Test",
+      "issue_text": "Test delete of a just created record",
+      "created_by": "Duke",
+      "project": "apitest",
+      "_id": "mebsquetk3vo4zh0-ka6mybw7-n32ix8vn-583hc7h3uagentez",
+      "created_on": "2024-10-17T12:41:23.311Z",
+      "updated_on": "2024-10-17T12:41:23.311Z",
+      "open": true
+    },
+    {
+      "issue_title": "Issue aimed to test the test",
+      "issue_text": "POST this issue to see the test behavior",
+      "created_by": "Duke",
+      "assigned_to": "Duke",
+      "open": true,
+      "status_text": "Observing",
+      "project": "fccthornton",
+      "_id": "gxd3fsm2jouky8jv-2peh8uqv-c0jqgqae-o177poe2y3ev1jyi",
+      "created_on": "2024-10-17T12:43:01.758Z",
+      "updated_on": "2024-10-17T12:43:01.758Z"
+    },
+    {
+      "issue_title": "Only required fields",
+      "issue_text": "POST this issue to see the test behavior with a minimum number of fields",
+      "created_by": "Duke",
+      "project": "apitest",
+      "_id": "6yrust1b35ilmi5a-9dkbu1hy-461m79xz-wrj9d8z97v8kqfbd",
+      "created_on": "2024-10-17T12:43:01.783Z",
+      "updated_on": "2024-10-17T12:43:01.783Z",
+      "open": true
+    },
+    {
+      "issue_title": "Functional Test",
+      "issue_text": "Test delete of a just created record",
+      "created_by": "Duke",
+      "project": "apitest",
+      "_id": "8x7vxls9fbrn7p9s-ok05q9yy-b0ifbpq6-dbh7rd626k4oj88q",
+      "created_on": "2024-10-17T12:43:01.840Z",
+      "updated_on": "2024-10-17T12:43:01.840Z",
+      "open": true
+    },
+    {
+      "issue_title": "Issue aimed to test the test",
+      "issue_text": "POST this issue to see the test behavior",
+      "created_by": "Duke",
+      "assigned_to": "Duke",
+      "open": true,
+      "status_text": "Observing",
+      "project": "fccthornton",
+      "_id": "w2rr1xmnr8ljita4-oyvksq3v-hpjm4ypb-sz0kmd6m4hzyg0es",
+      "created_on": "2024-10-17T12:45:33.044Z",
+      "updated_on": "2024-10-17T12:45:33.044Z"
+    },
+    {
+      "issue_title": "Only required fields",
+      "issue_text": "POST this issue to see the test behavior with a minimum number of fields",
+      "created_by": "Duke",
+      "project": "apitest",
+      "_id": "brcclt9ah70vxr7l-2drntuk2-s6i164vn-unnz1lgec4br5zcg",
+      "created_on": "2024-10-17T12:45:33.068Z",
+      "updated_on": "2024-10-17T12:45:33.068Z",
+      "open": true
+    },
+    {
+      "issue_title": "Functional Test",
+      "issue_text": "Test delete of a just created record",
+      "created_by": "Duke",
+      "project": "apitest",
+      "_id": "ynmvyttmezcquz7s-9yynv6ir-7r6xyo8p-938d6k7l95lascwf",
+      "created_on": "2024-10-17T12:45:33.126Z",
+      "updated_on": "2024-10-17T12:45:33.126Z",
+      "open": true
+    },
+    {
+      "issue_title": "Issue aimed to test the test",
+      "issue_text": "POST this issue to see the test behavior",
+      "created_by": "Duke",
+      "assigned_to": "Duke",
+      "open": true,
+      "status_text": "Observing",
+      "project": "fccthornton",
+      "_id": "l402rxvfg5n6xpks-i2lkp16z-0xwzz65q-c39u6ligv7a7ybwl",
+      "created_on": "2024-10-17T12:46:24.773Z",
+      "updated_on": "2024-10-17T12:46:24.773Z"
+    },
+    {
+      "issue_title": "Only required fields",
+      "issue_text": "POST this issue to see the test behavior with a minimum number of fields",
+      "created_by": "Duke",
+      "project": "apitest",
+      "_id": "j726dc2mdrog61k7-dbqhkv2q-tvcjpuym-jhbc2xvwesmsfbc4",
+      "created_on": "2024-10-17T12:46:24.805Z",
+      "updated_on": "2024-10-17T12:46:24.805Z",
+      "open": true
     }
   ]
 }

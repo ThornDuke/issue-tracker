@@ -106,7 +106,7 @@ function dbHandler(apiUrl) {
       done({ err: "no update field(s) sent", _id: _id });
       return;
     }
-    fetch(this.apiUrl + "/" + project + "/" + _id)
+    fetch(`${this.apiUrl}/issues/${_id}`)
       .then((response) => {
         if (response.status >= 400) {
           throw new Error(response.statusText);
@@ -121,9 +121,10 @@ function dbHandler(apiUrl) {
         const updatedRecord = {
           ...data,
           ...record,
+          project,
           updated_on: date,
         };
-        fetch(this.apiUrl + "/" + project + "/" + _id, {
+        fetch(`${this.apiUrl}/issues/${_id}`, {
           method: "PUT",
           headers: {
             "Content-type": "application/json",
@@ -138,7 +139,7 @@ function dbHandler(apiUrl) {
   };
 
   this.deleteRecord = function (project, _id, done) {
-    fetch(`${this.apiUrl}/${project}/${_id}`, {
+    fetch(`${this.apiUrl}/issues/${_id}`, {
       method: "DELETE",
       headers: {
         "Content-type": "application/json",
