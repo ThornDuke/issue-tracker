@@ -206,6 +206,8 @@ suite("Functional Tests", function () {
             .send({ _id: currId })
             .end(function (err, res) {
               assert.equal(res.status, 200);
+              assert.equal(res.body.result, "successfully deleted");
+              assert.equal(res.body._id, currId);
               done();
             });
         });
@@ -219,6 +221,8 @@ suite("Functional Tests", function () {
         })
         .end(function (err, res) {
           assert.equal(res.status, 400);
+          assert.equal(res.body.error, "could not delete");
+          assert.equal(res.body._id, "cippalippa");
           done();
         });
     });
@@ -228,7 +232,7 @@ suite("Functional Tests", function () {
         .delete("/api/issues/apitest")
         .end(function (err, res) {
           assert.equal(res.status, 400);
-          assert.equal(res.text, '{"error":"missing _id"}');
+          assert.equal(res.body.error, "missing _id");
           done();
         });
     });

@@ -58,15 +58,15 @@ module.exports = function (app) {
       const project = req.params.project;
       const _id = req.body._id;
       if (!_id) {
-        res.status(400).json({ error: "missing _id" });
+        res.status(400).send({ error: "missing _id" });
         return;
       }
 
       db.deleteRecord(project, _id, (err, data) => {
         if (err) {
-          res.status(400).json({ error: err });
+          res.status(400).json({ error: "could not delete", _id: _id });
         }
-        res.send(data);
+        res.send({ result: "successfully deleted", _id: _id });
       });
     });
 };
