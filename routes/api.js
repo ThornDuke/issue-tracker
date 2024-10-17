@@ -23,6 +23,8 @@ module.exports = function (app) {
     })
 
     .post(function (req, res) {
+      // console.log("§=>", req.params, req.body);
+
       const project = req.params.project;
       const body = req.body;
       db.createRecord(project, body, (err, data) => {

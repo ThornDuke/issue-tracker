@@ -32,9 +32,11 @@ suite("Functional Tests", function () {
       chai
         .request(server)
         .keepOpen()
-        .post("/api/issues/apitest")
+        .post("/api/issues/fccthornton")
         .send(everyFieldObj)
         .end(function (err, res) {
+          console.log("#=>", "fcc");
+
           assert.equal(res.status, 200);
           assert.property(res.body, "_id");
           assert.property(res.body, "created_on");

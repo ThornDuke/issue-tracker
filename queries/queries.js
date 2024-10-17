@@ -1,6 +1,14 @@
 "use strict";
 
 function createId() {
+  const hyphenated = function (str) {
+    let result = str;
+    result = result.substring(0, 16) + "-" + result.substring(16);
+    result = result.substring(0, 25) + "-" + result.substring(25);
+    result = result.substring(0, 34) + "-" + result.substring(34);
+    return result;
+  };
+
   let result = "";
   const pool = "0123456789abcdefghijklmnopqrstuvwxyz"
     .split("")
@@ -19,7 +27,7 @@ function createId() {
     .sort((prev, succ) => prev.sort - succ.sort)
     .map((item) => item.value)
     .join("");
-  return result;
+  return hyphenated(result);
 }
 
 function hasRequiredFields(obj) {
@@ -39,13 +47,13 @@ function dbHandler(apiUrl) {
         return "";
       }
       return (
-        "?" +
+        "&" +
         Object.keys(q)
           .map((key) => `${key}=${q[key]}`)
           .join("&")
       );
     };
-    const actualUrl = `${this.apiUrl}/${project}${queryContent(query)}`;
+    const actualUrl = `${this.apiUrl}/issues?project=${project}${queryContent(query)}`;
     fetch(actualUrl)
       .then((response) => {
         if (response.status >= 400) {
@@ -61,11 +69,12 @@ function dbHandler(apiUrl) {
     if (hasRequiredFields(record)) {
       const _id = createId();
       const date = currDate();
+      record.project = project;
       record._id = _id;
       record.created_on = date;
       record.updated_on = date;
       record.open = true;
-      fetch(this.apiUrl + "/" + project, {
+      fetch(this.apiUrl + "/issues", {
         method: "POST",
         headers: {
           "Content-type": "application/json",
@@ -74,6 +83,8 @@ function dbHandler(apiUrl) {
       })
         .then((response) => {
           if (response.status >= 400) {
+            // console.log("ERROR: =>", response);
+
             throw new Error(response.statusText);
           }
           return response.json();
